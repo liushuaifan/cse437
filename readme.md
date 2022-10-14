@@ -1,3 +1,3 @@
-course project
+npm install
 
-run npm run serve, to start
+npm run serve
