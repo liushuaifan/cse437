@@ -1,3 +1,3 @@
-run npm install, to initialize<br>
+course project
 
 run npm run serve, to start
