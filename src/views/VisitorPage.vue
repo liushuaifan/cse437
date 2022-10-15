@@ -1,38 +1,32 @@
 <template>
-    <div style="text-align: left;font-size: 40px;">
-                    <img src="/logo.png" alt="london"/>
-                    
-                    <span style="padding-right:100px"></span>
-                    websiteName
-                    <span style="padding-right:200px"></span>           
-                    <router-link to="/login">Create Review</router-link> 
-                    <span style="padding-right:100px"></span> 
-                    <div1  v-if="verified" display>h</div1>
-                    <div1  v-else>School</div1>
-                    <span style="padding-right:100px"></span>
-                    <router-link to="/login">log in</router-link> 
-                    <span style="padding-right:50px"></span>
-                    <router-link to="/SignUp">sign up</router-link> 
-                    <span style="padding-right:100px"></span>
-                    
-                    <router-link to="/ProfilE">
-                      <img src="/log.png" alt="lon"/>
-                    </router-link> 
+    <div class="topbar">
+        <router-link to="/VisitorPage">
+          <img style="float: left;" src="/logo.png" alt="london"/>
+        </router-link>
+        <span class="text" style="left: 70px;">website name</span>
+    
+        <router-link to="/CreateReview" class="text" style="left: 35%">Create Review</router-link> 
+
+        <span class="text" style="right: 270px" v-if="verified" display>h</span>
+        <span class="text" style="right: 270px" v-else>School</span>
+        
+        <router-link to="/login" class="text" style="right:170px">log in</router-link> 
+        
+        <router-link to="/SignUp" class="text" style="right:70px">sign up</router-link> 
+      
+      
+      <router-link to="/ProfilE">
+        <img style="float: right;" src="/log.png" alt="lon"/>
+      </router-link> 
     </div>
     <hr>
     <br>
     <br>
     <br>
-    <div style="text-align: left;font-size: 30px;">
-     
-     
-                   
-          <div class="control">
-                            
-            <input type="text" class="input" v-model="search">
-         
+    <div style="text-align: center; font-size: 30px;">      
+          <div class="control">                
+          <input type="text" class="input" v-model="search">
     </div>
-
     <br>
     <br>
     <br>
@@ -41,15 +35,15 @@
     <br>
     <hr>
     
-    <router-link to="/ProfilE">
+    <router-link to="/ReView">
        how to nagivate website
     </router-link> 
     <span style="padding-right:200px"></span>  
-    <router-link to="/ProfilE">
+    <router-link to="/ReView">
        what to expect from website
     </router-link> 
     <span style="padding-right:200px"></span>  
-    <router-link to="/ProfilE">
+    <router-link to="/ReView">
        what to expect from website
     </router-link> 
 
@@ -95,7 +89,7 @@ img {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 100px;
+  width: 50px;
 }
 
 .text-center{
@@ -103,6 +97,16 @@ img {
 }
 
 .b-nav{
-    text-align: left;
+  text-align: left;
+}
+.topbar {
+  position: relative;
+  text-align: center;
+  font-size: 25px; 
+  height: 57px; 
+}
+.text {
+  position: absolute;
+  top: 13px;
 }
 </style>

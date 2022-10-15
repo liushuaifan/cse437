@@ -31,7 +31,7 @@
 
                     <hr>
 
-                     <router-link to="/HomeView">login</router-link> 
+                     <router-link to="/VisitorPage">login</router-link> 
                      
                      <hr>
 
