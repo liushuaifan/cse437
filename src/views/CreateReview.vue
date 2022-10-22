@@ -30,47 +30,29 @@
   </div>
   <div class="area1">
     <p>Department: <select>
-      <option></option>
-      <option></option>
-      <option></option>
-      <option></option>
-      <option></option>
-    </select>
-    </p>
-    <p>Class: <select>
-      <option></option>
-      <option></option>
-      <option></option>
+      <option>computer science</option>
+      <option>Math</option>
+      <option>Business</option>
       <option></option>
       <option></option>
     </select>
     </p>
-    <p>Instructor: <select>
-      <option></option>
-      <option></option>
-      <option></option>
-      <option></option>
-      <option></option>
-    </select>
-    </p>
+                      
+         class Title <input type="classTitle"  v-model="c">
+   
+    <div >                    
+          professor name <input type="prefessor"  v-model="a">
+    </div>
     <p>Semester Taken: <select>
-      <option></option>
-      <option></option>
-      <option></option>
-      <option></option>
-      <option></option>
+      <option>2022</option>
+      <option>2021</option>
+      <option>2020</option>
+      <option>2019</option>
+      <option>2018</option>
     </select>
     </p>
   </div>
   <div class="area2">
-    <p>Semester: <select>
-      <option></option>
-      <option></option>
-      <option></option>
-      <option></option>
-      <option></option>
-    </select>
-    </p>
     <p>Difficulty: 1<input type="radio" name="degree" value="1">
     <input type="radio" name="degree" value="2">
     <input type="radio" name="degree" value="3">
@@ -86,18 +68,18 @@
     5
     </p>
     <p>Class Type: <select>
-      <option></option>
-      <option></option>
-      <option></option>
+      <option>project</option>
+      <option>exam</option>
+      <option>research</option>
       <option></option>
       <option></option>
     </select>
     </p>
     <p>Time Spent per Week: <select>
-      <option></option>
-      <option></option>
-      <option></option>
-      <option></option>
+      <option> less than 5 hours</option>
+      <option>5-10 hours</option>
+      <option> 10 - 15 hours</option>
+      <option>more than 15 hours</option>
       <option></option>
     </select>
     </p>
@@ -129,22 +111,7 @@
     <input type="radio" name="degree" value="5">
     5
     </p>
-    <p>Class Size: <select>
-      <option></option>
-      <option></option>
-      <option></option>
-      <option></option>
-      <option></option>
-    </select>
-    </p>
-    <p>Instruction Style: <select>
-      <option></option>
-      <option></option>
-      <option></option>
-      <option></option>
-      <option></option>
-    </select>
-    </p>
+
     <p>Comments:</p>
     <button>Add Comment</button>
   </div>
@@ -157,6 +124,8 @@ export default{
     data(){
        return {
          search: 'search your class',
+         prefessor: 'prefessor name',
+         classTitle: 'Class Title'
        }
     },
 }

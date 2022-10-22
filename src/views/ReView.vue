@@ -27,7 +27,15 @@
   <br>
   <div class="box1">
     <span>Review Title</span>
-    <button style="margin-left: 700px;">Report</button>
+    <button  @click="toggle" style="margin-left: 700px;">Report inappropriate content</button>
+    <p v-if="awesome" style="margin-left: 700px;">select from the following <select>
+      <option>racism</option>
+      <option>not related information</option>
+      <option></option>
+      <option></option>
+      <option></option>
+    </select>
+    </p>
   </div>
   <div class="box3">
     <span style="margin: 30px;">Course Title</span>
@@ -41,20 +49,42 @@
     <p>Year when Taken:</p>
   </div>
   <div class="comment">
-    <p>Comments:</p>
-    <button>Add Comment</button>
+    
+    <form @submit.prevent="addcomment">
+    <input v-model="newComment">
+    <button>Add Comment</button>    
+    </form>  
+    
+    <div  v-if="comments.length">
+                        <p v-for="comment in comments" v-bind:key="comment">{{ comment }}</p>
+          </div>
   </div>
 </template>
 
 
 <script>
+
+
 export default{
     name:'ReView',
     data(){
        return {
          search: 'search your class',
+         awesome: false,
+         comments: [],
+         newComment: '1',
+         verified:'true'
        }
     },
+    methods: {
+    toggle() {
+      this.awesome = !this.awesome
+    },
+    addcomment() {
+      this.comments.push(this.newComment)
+      this.newComment = ''
+    }
+  }
 }
 
 </script>

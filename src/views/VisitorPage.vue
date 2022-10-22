@@ -3,9 +3,9 @@
         <router-link to="/VisitorPage">
           <img style="float: left;" src="/logo.png" alt="london"/>
         </router-link>
-        <span class="text" style="left: 70px;">website name</span>
+        <span class="text" style="left: 150px;">website name</span>
     
-        <router-link to="/CreateReview" class="text" style="left: 35%">Create Review</router-link> 
+        <router-link to="/CreateReview" class="text" style="left:800px; font-size: 45px;">Create Review</router-link> 
 
         <span class="text" style="right: 270px" v-if="verified" display>h</span>
         <span class="text" style="right: 270px" v-else>School</span>
@@ -25,7 +25,8 @@
     <br>
     <div style="text-align: center; font-size: 30px;">      
           <div class="control">                
-          <input type="text" class="input" v-model="search">
+          <input type="text" class="input">
+          <router-link to="/Review"  style="font-size: 20px;">search class or professor</router-link> 
     </div>
     <br>
     <br>

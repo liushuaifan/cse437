@@ -117,6 +117,7 @@ export default {
                 localStorage.password = this.password;
                 this.verified = true;
                 this.errors.push('SignUp successfully')
+                this.$router.push("/login")
             }
             console.log(this.username+" "+this.University+this.password+" "+this.AreaOfStudy+" "+this.Email)
         },
