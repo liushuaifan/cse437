@@ -41,6 +41,7 @@
     <span style="margin: 30px;">Course Title</span>
     <span style="margin: 30px;">Professor</span>
     <span style="margin: 30px;">Semester</span>
+    <span style="margin: 30px;">University</span>
   </div>
   <div class="box4">
     <p>Overall Rating:</p>

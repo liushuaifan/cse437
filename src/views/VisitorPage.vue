@@ -1,32 +1,31 @@
 <template>
     <div class="topbar">
         <router-link to="/VisitorPage">
-          <img style="float: left;" src="/logo.png" alt="london"/>
+          <img style="float: left; border: none;" src="/booklogo.png" alt="london"/>
         </router-link>
-        <span class="text" style="left: 150px;">website name</span>
+        <span class="text" style="left: 10%;">Rate My Class</span>
     
-        <router-link to="/CreateReview" class="text" style="left:800px; font-size: 45px;">Create Review</router-link> 
+        <router-link to="/CreateReview" class="text" style="left: 40%">Create Review</router-link> 
 
-        <span class="text" style="right: 270px" v-if="verified" display>h</span>
-        <span class="text" style="right: 270px" v-else>School</span>
+        <span class="text" style="right: 230px; font-size: 15px" v-if="verified" display>h</span>
+        <span class="text" style="right: 230px; font-size: 15px" v-else>School</span>
         
-        <router-link to="/login" class="text" style="right:170px">log in</router-link> 
+        <router-link to="/login" class="text" style="right:130px; font-size: 15px">log in</router-link> 
         
-        <router-link to="/SignUp" class="text" style="right:70px">sign up</router-link> 
+        <router-link to="/SignUp" class="text" style="right:70px; font-size: 15px">sign up</router-link> 
       
       
       <router-link to="/ProfilE">
         <img style="float: right;" src="/log.png" alt="lon"/>
       </router-link> 
     </div>
-    <hr>
     <br>
     <br>
     <br>
     <div style="text-align: center; font-size: 30px;">      
           <div class="control">                
           <input type="text" class="input">
-          <router-link to="/Review"  style="font-size: 20px;">search class or professor</router-link> 
+          <router-link to="/Review"  style="font-size: 20px; text-decoration: none;">search class or professor</router-link> 
     </div>
     <br>
     <br>
@@ -36,15 +35,15 @@
     <br>
     <hr>
     
-    <router-link to="/ReView">
+    <router-link to="/ReView" style="text-decoration: none;">
        how to nagivate website
     </router-link> 
     <span style="padding-right:200px"></span>  
-    <router-link to="/ReView">
+    <router-link to="/ReView" style="text-decoration: none;">
        what to expect from website
     </router-link> 
     <span style="padding-right:200px"></span>  
-    <router-link to="/ReView">
+    <router-link to="/ReView" style="text-decoration: none;">
        what to expect from website
     </router-link> 
 
@@ -105,9 +104,13 @@ img {
   text-align: center;
   font-size: 25px; 
   height: 57px; 
+  background-image: linear-gradient(to bottom right,rgb(118,76,163),rgb(92,103,211));
 }
 .text {
   position: absolute;
   top: 13px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 </style>
