@@ -1,3 +1,28 @@
+<!-- <template>
+  <div id="app">
+    <Tasks />
+  </div>
+</template>
+<script>
+import Tasks from "./components/TaskView.vue";
+export default {
+  name: "App",
+  components: {
+    Tasks,
+  },
+};
+</script>
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style> -->
+
 <template>
   <div id="nav">
 
@@ -8,38 +33,6 @@
 <script>
  export default{
    mounted(){
-
-
    }
  }
 </script>
-
-
- <!--<style  lang="scss">
-#nav{
-  padding:10px;
-  width:100%;
-  height:30px;
-  background-color:white;
-  line-height:30px;
-
-  a{
-    font-weight:bold;
-    color:darkgray;
-    text-decoration:none;
-    margin:0 5px 0 5px;
-    font-size:1.25rem;
-
-    &.active{
-      color:#2c3e50;
-    }
-  }
-
-}
-</style>
-
--->
-
-
-
-

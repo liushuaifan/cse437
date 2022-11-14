@@ -14,7 +14,7 @@ const routes = [
   {path: '/HomeView', name:'HomeView',component: Homeview },
   {path: '/VisitorPage', name:'VisitorPage',component: VisiTor},
   {path: '/CreateReview', name:'CreateReview',component: CreateReview},
-  {path: '/ReView', name:'ReView',component: ReView},
+  {path: '/ReView/:reviewId', name:'ReView',component: ReView},
   {path: '/ProfilE', name:'ProfilE',component: ProfilE},
 ]
 
