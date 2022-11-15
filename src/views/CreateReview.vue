@@ -1,7 +1,7 @@
 <template>
     <div class="topbar">
         <router-link to="/VisitorPage">
-            <img style="float: left;" src="/logo.png" alt="london"/>
+            <img class="logo" style="float: left;" src="/booklogo.png" alt="london"/>
         </router-link>
         <span class="text" style="left: 70px;">website name</span>
   
@@ -248,6 +248,7 @@
                     review_text: this.userComment
                 });
                 console.log(response.data);
+                //this.$alert("Hello Vue Simple Alert.");
                 // Append the returned data to the tasks array
                 //console.log("pushing " + response.data);
                 //this.comments.push(response.data);

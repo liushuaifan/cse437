@@ -1,7 +1,7 @@
 <template>
     <div class="topbar">
         <router-link to="/VisitorPage">
-          <img style="float: left;" src="/logo.png" alt="london"/>
+          <img class="logo" style="float: left;" src="/booklogo.png" alt="london"/>
         </router-link>
         <span class="text" style="left: 10%;">Rate My Class</span>
     
@@ -16,7 +16,7 @@
       
       
       <router-link to="/ProfilE">
-        <img style="float: right;" src="/log.png" alt="lonased"/>
+        <img style="float: right;" src="/profile.png" alt="lonased"/>
       </router-link> 
     </div>
     <br>
@@ -68,7 +68,7 @@
     </router-link>  -->
     <span style="padding-right:200px"></span>  
     <router-link to="/ReView/1" style="text-decoration: none;">
-       what to expect from website
+       sample review
     </router-link> 
     <span style="padding-right:200px"></span>  
     <!-- <router-link to="/ReView" style="text-decoration: none;">
@@ -130,9 +130,12 @@ export default{
             if (this.reviews[i].course_name == this.search) {
               this.searchresult.push(this.reviews[i]);
             }
-            console.log(this.reviews[i].professor_name.replace(" ",""));
-            console.log(this.search.replace(" ",""));
+            //console.log(this.reviews[i].professor_name.replace(" ",""));
+            //console.log(this.search.replace(" ",""));
             if (this.reviews[i].professor_name.replaceAll(" ","") == this.search.replaceAll(" ","")) {
+              this.searchresult.push(this.reviews[i]);
+            }
+            if(this.reviews[i].department_name == this.search){
               this.searchresult.push(this.reviews[i]);
             }
         }
@@ -200,5 +203,12 @@ table, th, td {
 .center {
   margin-left: auto;
   margin-right: auto;
+}
+.logo {
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 </style>

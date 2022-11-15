@@ -1,7 +1,7 @@
 <template>
     <div class="topbar">
         <router-link to="/VisitorPage">
-            <img style="float: left;" src="/logo.png" alt="london"/>
+            <img class="logo" style="float: left;" src="/booklogo.png" alt="london"/>
         </router-link>
         <span class="text" style="left: 70px;">website name</span>
 
